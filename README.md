@@ -29,6 +29,12 @@ php artisan vendor:publish --provider=Ntuple\Ntuple\BlockBuilder\Ntuple\BlockBui
 return view('view')->withShortcodes();
 ```
 
+#### Add to Layout Blade
+Add following to HEAD section of your Layout Blade
+```
+@include('blockbuilder::includes.pagkages')
+```
+
 #### ShortCode for Blocks
 ```
 [block type='table']

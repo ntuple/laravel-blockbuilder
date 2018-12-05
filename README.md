@@ -12,7 +12,7 @@ Laravel Block Builder. Got inspired from CrudBooster's StaticBlock Feature.
 ## Install
 Via Composer
 ```
-composer require ntuple/laravel-blockbuilder:dev-master
+composer require ntuple/laravel-blockbuilder:0.1.0
 ```
 
 #### Publish the Configuration

@@ -2,11 +2,42 @@
 
 > Laravel Block Builder, Easy way to create a static block from SQL !
 
-Laravel Block Builder. Got inspired from CrudBooster's StaticBlock Feature. Integreted 
+Laravel Block Builder. Got inspired from CrudBooster's StaticBlock Feature. 
 
 ## Features 
-- Test
+- Easy to Use Shortcode
+- Use of SQL Query to Create Blocks
 - Many more...
+
+## Install
+Via Composer
+```
+composer require ntuple/laravel-blockbuilder:dev-master
+```
+
+#### Publish the Configuration
+Publish assets
+```php
+php artisan vendor:publish --provider=Ntuple\Ntuple\BlockBuilder\Ntuple\BlockBuilderServiceProvider
+```
+
+## Usages
+
+#### Enable ShortCode
+
+```php
+return view('view')->withShortcodes();
+```
+
+#### ShortCode for Blocks
+```
+[block type='table']
+    {
+        "label": ["name", "email"],
+        "sql": "select * from users;"
+    }
+[/block]
+```
 
 ## Credits
 1. Laravel Shortcode [webwizo](hhttps://github.com/webwizo/laravel-shortcodes)

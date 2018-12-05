@@ -2,10 +2,7 @@
 
 namespace Ntuple\BlockBuilder;
 
-use Webwizo\Shortcodes\View\Factory;
 use Illuminate\Support\ServiceProvider;
-use Webwizo\Shortcodes\Compilers\ShortcodeCompiler;
-use Webwizo\Shortcodes\Shortcode;
 
 class BlockBuilderServiceProvider extends ServiceProvider
 {

@@ -13,20 +13,8 @@ class BlockBuilderServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->enableCompiler();
     }
-    /**
-     * Enable the compiler.
-     */
-    public function enableCompiler()
-    {
-        // Check if the compiler is auto enabled
-        $state = $this->app['config']->get('laravel-shortcodes::enabled', false);
-        // Enable when needed
-        if ($state) {
-            $this->app['shortcode.compiler']->enable();
-        }
-    }
+
     /**
      * Register the service provider.
      *

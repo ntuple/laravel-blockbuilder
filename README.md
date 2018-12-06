@@ -18,7 +18,7 @@ composer require ntuple/laravel-blockbuilder:0.1.0
 #### Publish the Configuration
 Publish assets
 ```php
-php artisan vendor:publish --provider=Ntuple\Ntuple\BlockBuilder\Ntuple\BlockBuilderServiceProvider
+php artisan vendor:publish --provider=Ntuple\BlockBuilder\BlockBuilderServiceProvider
 ```
 
 ## Usages

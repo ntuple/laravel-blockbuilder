@@ -40,11 +40,11 @@ class BlockBuilderServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/assets' => public_path('vendor/blockbuilder')
-        ],'blockbuilder_asset');
+        ], 'blockbuilder_asset');
     }
 
     /**
-     * Register a new shortcode
+     * Register a new shortcode.
      *
      * @return
      */

@@ -10,27 +10,28 @@ class BlockBuilderService
      * @param $shortcode
      * @param $content
      *
-     * @return string
-     *
      * @throws \Throwable
+     *
+     * @return string
      */
     public function register($shortcode, $content)
     {
         $data = json_decode($content);
 
-        return $this->render($shortcode->type, $data->label, $data->sql);
+        return $this->render($shortcode->type, $data->sql, $data->label ?? null);
     }
     /**
      * @param string $plugin
-     * @param array $label
+     * @param array  $label
      * @param string $sql
      *
-     * @return string
      * @throws \Throwable
+     *
+     * @return string
      */
-    public function render(string $plugin, array $label, string $sql)
+    public function render(string $plugin, string $sql, array $label = null)
     {
-        $sql = count($label) ? str_replace('*', implode(',', $label), $sql) : $sql;
+        $sql = $label ? str_replace('*', implode(',', $label), $sql) : $sql;
 
         $data['sql'] = DB::select(DB::raw($sql));
 

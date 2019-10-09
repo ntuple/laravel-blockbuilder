@@ -20,12 +20,11 @@ class BlockBuilderService
 
         return $this->render($shortcode->type, $data->sql, $data->label ?? null);
     }
+
     /**
      * @param string $plugin
-     * @param array  $label
      * @param string $sql
-     *
-     * @throws \Throwable
+     * @param array $label
      *
      * @return string
      */

@@ -36,5 +36,5 @@ class BlockBuilderService
         $data['sql'] = DB::select(DB::raw($sql));
 
         return view('blockbuilder::components.'. $plugin, $data)->render();
-	}
+    }
 }

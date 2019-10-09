@@ -39,7 +39,7 @@ class BlockBuilderServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views', 'blockbuilder');
 
         $this->publishes([
-            __DIR__.'/assets' => public_path('vendor/blockbuilder')
+            __DIR__.'/assets' => public_path('vendor/blockbuilder'),
         ], 'blockbuilder_asset');
     }
 

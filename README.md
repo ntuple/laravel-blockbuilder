@@ -46,5 +46,5 @@ Add following to HEAD section of your Layout Blade
 ```
 
 ## Credits
-1. Laravel Shortcode [webwizo](hhttps://github.com/webwizo/laravel-shortcodes)
+1. Laravel Shortcode [webwizo](https://github.com/webwizo/laravel-shortcodes)
 3. Laravel Framework by [Taylor Otwell](https://github.com/laravel/laravel)
